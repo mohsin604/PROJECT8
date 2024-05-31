@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+
+</style>
+
+<body>
+    <div class="tb">
+        <div>
+            <h2>hi</h2>
+        </div>
+        <div class="btn">
+            <h1>></h1>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="bgimg">
+            <div class="s-content s-display-container">
+                <div class="mySlides slide1">
+                    <div class="stext">
+                        <h4>Customer Service</h4> <br>
+                        <p>Constantly researching<br />at every step, including new <br />ways to optimise packaging.
+                        </p>
+                    </div>
+                </div>
+                <div class="mySlides slide2">
+                    <div class="stext">
+                        <h4>Customer <br/> Service</h4> <br><p>You have our full attention<br/>at every step, including <br/>full technical support.</p>
+                    </div>
+                </div>
+                <div class="mySlides slide3">
+                    <div class="stext">
+                        <h4>Stock or <br/> customised</h4><br><p>Extensive stock on hand,<br/>secure supply chains<br/>and customised solutions.</p>
+                    </div>
+                </div>
+                <div class="mySlides slide4">
+                    <div class="stext">
+                        <h4>Inventory <br /> management<br />and distribution</h4><br>
+                        <p>We make it easy with tailored <br />inventory management and <br />speedy delivery.</p>
+                    </div>
+                </div>
+                <div class="mySlides slide5">
+                    <div class="stext">
+                        <h4>R&D</h4> <br>
+                        <p>Constantly researching<br />at every step, including new <br />ways to optimise packaging.
+                        </p>
+                    </div>
+                </div>
+                <div class="s-button-container">
+                    <button class="s-button s-black s-display-left" onclick="plusDivs(-1)"><img src="./img/reshot-icon-arrow-chevron-left-975UQXVKZF.svg" alt=""> </button>
+                    <span class="slide-number">1/5</span>
+                    <button class="s-button s-black s-display-right" onclick="plusDivs(1)"> <img src="./img/reshot-icon-arrow-chevron-right-WDGHUKQ634 (1).svg" alt=""> </button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="mesageb">
+            <h1>hi</h1><br><h1>hi</h1><br><h1>hi</h1>
+        </div>
+       
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "flex";
+                updateSlideNumber(slideIndex, x.length);
+            }
+
+            function updateSlideNumber(current, total) {
+                document.querySelector('.slide-number').textContent = current + '/' + total;
+            }
+        </script>
+
+</body>
+
+</html>

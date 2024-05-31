@@ -1,0 +1,154 @@
+.btn {
+    margin-left: 5%;
+      border: 5px solid #222;
+      border-left: none;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      top: 6px;
+      margin-right: 0;
+      padding-left: 5px;
+      position: absolute;
+      left: 0;
+    }
+    
+    .btn::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      height: 35px;
+      width: 5px;
+      background: #222;
+      transition: all ease-out 0.3s;
+    }
+    
+    .tb:hover .btn::after {
+      height: 60px;
+         bottom: 0px;
+      }
+      .slider {
+        background-color: #CDD529;
+        padding: 20px;
+        height: 100%;
+        margin: 0;
+        
+    }
+    .bgimg {
+        background-image: url(./img/output-onlinepngtools.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100%;
+     width: 100%;
+        
+    }
+    
+   
+    
+    
+    .s-content {
+        text-align: center;
+        position: relative;
+    }
+    
+    .mySlides {
+        text-align: center;
+        display: none;
+        justify-content: center;
+        align-items: center;
+       height: 600px;
+       width: 100%;
+    }
+    
+    .mySlides:first-child {
+        display: flex;
+    }
+    
+    .slide1, .slide2, .slide3, .slide4, .slide5 {
+        background-position: center;
+        background-repeat: no-repeat;
+        
+    }
+    .stext h4{
+         margin: 0;        
+    }
+    .stext p{
+        margin: 0%;
+    }
+    .slide1 {
+        background-image: url('./img/circle-1.png');
+    }
+    
+    .slide2 {
+        background-image: url('./img/circle-2.png');
+    }
+    
+    .slide3 {
+        background-image: url('./img/circle-3.png');
+    }
+    
+    .slide4 {
+        background-image: url('./img/circle-4.png');
+    }
+    
+    .slide5 {
+        background-image: url('./img/circle-5.png');
+    }
+    
+    .s-button-container {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+    }
+    .s-button.s-black {
+         border: none;
+        background: none;
+        
+      }
+    .s-button {
+        cursor: pointer;
+    }
+    
+    .slide-number {
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        padding: 10px;
+    }
+    .mesageb {
+        position: relative;
+        max-width: 100%;
+        width: 370px;
+        padding: 32px;
+        border: 8px solid #222;
+        background-color: #CDD529; 
+        margin: 0 auto;
+    }
+    
+    .mesageb:before {
+        width: 0px;
+  height: 0px;
+  position: absolute;
+  content: '';
+  border-right: 45px solid #fff0;
+  border-top: 45px solid #222;
+  bottom: -45px;
+  left: 22%;
+        
+    }
+    .mesageb::after{
+        width: 0px;
+  height: 0px;
+  position: absolute;
+  content: '';
+  border-right: 34px solid #fff0;
+  border-top: 34px solid #cdd529;
+  bottom: -28px;
+  left: 23.9%;
+}
+    
+   
