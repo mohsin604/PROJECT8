@@ -17,14 +17,14 @@
       position: absolute;
       left: 0;
       bottom: -1px;
-      height: 35px;
-      width: 5px;
+      height: 50%;
+      width: 5px; 
       background: #222;
       transition: all ease-out 0.3s;
     }
     
     .tb:hover .btn::after {
-      height: 60px;
+      height: 100%;
          bottom: 0px;
       }
       .slider {
@@ -148,7 +148,7 @@
   border-right: 34px solid #fff0;
   border-top: 34px solid #cdd529;
   bottom: -28px;
-  left: 23.9%;
+  left: 23% ;
 }
     
 
