@@ -136,12 +136,12 @@
   height: 0px;
   position: absolute;
   content: '';
-  border-right: 45px solid #fff0;
-  border-top: 39px solid #222;
+  border-right: 39px solid #fff0;
+  border-top: 45px solid #222;
   bottom: -45px;
   left: 22%;
         
-    }
+}
     .mesageb::after{
         width: 0px;
   height: 0px;
@@ -191,24 +191,6 @@
 
 
 
-/* Style for the search input */
-#searchInput {
-    padding: 8px;
-    margin-bottom: 10px;
-  }
-  
-  /* Style for the list items */
-  #filterList li {
-    list-style-type: none;
-    padding: 10px;
-    background-color: #f2f2f2;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  /* Style for the filtered items */
-  #filterList {
-    display: none;
-  }
   
 
 @media only screen and (max-width: 600px) {
