@@ -193,14 +193,15 @@
     height: 100px;
     width: 100px;
     background-color: #CDD529;
+    overflow: hidden;
 }
 .test::before {
-    content: '';
-    border-right: 34px solid #fff0;
-  border-top: 34px solid #101107;
+    content: img url(./img/6605129ba6eb595813666d41533ff12d.jpg);
+    /* border-right: 34px solid #fff0;
+  border-top: 34px solid #101107; */
     position: absolute;
-   height: 0;
-   width: 0; 
+   height: 12px;
+   width: 10px; 
 
 
   }
